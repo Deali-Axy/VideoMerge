@@ -1,5 +1,9 @@
 想合并视频，但是却找不到比较好用的工具，很多都要收费，我想着「这破功能还得收费？」，于是决定自己搞一个，一开始用Python做了一个，效果还不错，完美完成了我的视频合并任务，不过没有图形界面，想分享给朋友一起用也没办法，于是昨天用Qt写了个图形界面套上去，中间还是遇到一些问题的，通过这篇文章记录一下。
 
+软件的界面就是这样啦，用Qt Designer随便拖出来的，和VS拖控件也差不了多少。
+用起来挺方便的，我已经传到网盘了，有需要的同学可以在公众号后台回复「视频合并」直接获取下载链接。
+![](https://upload-images.jianshu.io/upload_images/8869373-9ce46c92f1bde75e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ## Qt
 首先是Qt，要开发GUI的话（我当然要求跨平台），现在好像选择也不是很多，electron这种就算了，系统调用太麻烦，不然还是可以考虑，毕竟谁还不会点前端是吧，.Net也不考虑了，没有成熟的跨平台GUI库，Flutter的Desktop还处于Preview阶段，pass掉，数来数去也就Qt上得了台面了。于是就Qt咯。
 
@@ -7,9 +11,6 @@
 
 关于这书的下次再写一篇博客专门说好了，有些地方记录一下也不错。
 
-
-软件的界面就是这样啦，用Qt Designer随便拖出来的，和VS拖控件也差不了多少。
-![](https://upload-images.jianshu.io/upload_images/8869373-9ce46c92f1bde75e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## Python
 Python语言设计得还可以，库也是真的多，我想合并视频，立刻就找到一个视频编辑库，moviepy，这个库不单可以合并视频，还可以剪切，加转场效果，调大小等多种操作，很不错，稍加利用就可以开发一个视频编辑工具了。
@@ -141,3 +142,9 @@ PyQt勉强可以开发吧，和C#这些那没得比，但是跨平台还是不�
 相关代码已经开源：[https://github.com/Deali-Axy/VideoMerge](https://github.com/Deali-Axy/VideoMerge)
 
 
+## 欢迎交流
+交流问题请在微信公众号后台留言，每一条信息我都会回复哈~
+- 微信公众号：画星星高手
+- 打代码直播间：[https://live.bilibili.com/11883038](https://live.bilibili.com/11883038)
+- 知乎：[https://www.zhihu.com/people/dealiaxy](https://www.zhihu.com/people/dealiaxy)
+- 简书：[https://www.jianshu.com/u/965b95853b9f](https://www.jianshu.com/u/965b95853b9f)
