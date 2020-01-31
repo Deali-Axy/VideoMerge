@@ -71,12 +71,6 @@ class Window(QMainWindow, Ui_MainWindow):
         self.btn_delete.clicked.connect(self.delete)
         self.btn_select.clicked.connect(self.select)
         self.btn_start.clicked.connect(self.start)
-        # self.test()
-
-    def test(self):
-        self.listWidget.addItem(r'E:\Videos\视频\超炫酷悠悠球表演.mp4')
-        self.listWidget.addItem(r'E:\Videos\视频\潮剧 金榜.mp4')
-        self.lineEdit.setText(r'E:\Videos\视频\1.mp4')
 
     def process_trigger(self, action: QAction):
         if action == self.actionExit:
@@ -85,7 +79,7 @@ class Window(QMainWindow, Ui_MainWindow):
     def add(self):
         fileDialog = QFileDialog(self)
         fileDialog.setFileMode(QFileDialog.ExistingFiles)
-        files, _ = fileDialog.getOpenFileNames(self, '选择视频文件', r'E:\Videos\视频')
+        files, _ = fileDialog.getOpenFileNames(self, '选择视频文件')
         for file in files:
             self.listWidget.addItem(file)
 
